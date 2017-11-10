@@ -5,6 +5,7 @@ LABEL maintainer "opsxcq@thestorm.com.br"
 RUN apt-get update && \
     apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    git wget curl \
     build-essential make autoconf \
     ## Packages and libs for polybar
     cmake cmake-data \
